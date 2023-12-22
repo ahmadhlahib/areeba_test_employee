@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_baseLayout"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Search"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_border1"
+            android:textSize="20dp" >
+        </EditText>
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_gravity="right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:padding="20dp"
+            android:background="@drawable/delete"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/tv_delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete All"
+            android:paddingLeft="30dp"
+            android:textColor="#fc5335"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_add_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:paddingRight="30dp"
+            android:textColor="#3549fc"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:dividerHeight="20dp"
+        android:divider="@color/white" />
+</LinearLayout>

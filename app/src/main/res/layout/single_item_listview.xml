@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_employee_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/shape_border1"
+    >
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:paddingLeft="3dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_baseLayout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="email@gmail.com"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="+ 961 71312535"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top"
+        android:background="@drawable/edit"
+        android:paddingRight="3dp" />
+</LinearLayout>

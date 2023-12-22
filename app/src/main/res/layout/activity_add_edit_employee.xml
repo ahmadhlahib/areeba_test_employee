@@ -1,0 +1,514 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_baseLayout"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical" >
+            <!--    TITLE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginRight="15dp"
+                android:textColor="#fc5335"
+                android:layout_gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Title"
+                android:textSize="20dp"/>
+        </LinearLayout>
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Title"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    FirstName-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginRight="15dp"
+                    android:textColor="#fc5335"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="First Name"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="First Name"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    Last Name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginRight="15dp"
+                    android:textColor="#fc5335"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Last Name"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Last Name"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    Gender-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#fc5335"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Gender"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/sp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                />
+            <!--    Phone-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:text="Phone"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    Cell-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:text="Cell"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Cell"
+                android:inputType="phone"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    USERNAME-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginRight="15dp"
+                    android:textColor="#fc5335"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Username"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Username"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    Password-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginRight="15dp"
+                    android:textColor="#fc5335"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Password"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    Email-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginRight="15dp"
+                    android:textColor="#fc5335"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Email"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Email"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--  DOB  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginRight="15dp"
+                    android:textColor="#fc5335"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="DOB"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="DOB"
+                android:editable="false"
+                android:text="SELECT DATE"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" />
+            <DatePicker
+                android:id="@+id/dob_date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+            <!--    Country-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:text="Country"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Country"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    City-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:text="City"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="City"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    State-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:text="State"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="State"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    Street-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:text="Street"
+                android:textSize="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <EditText
+                    android:id="@+id/et_street_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="Street Name"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:background="@drawable/shape_border1"
+                    android:textSize="20dp" >
+                </EditText>
+                <EditText
+                    android:id="@+id/et_street_number"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:hint="#"
+                    android:inputType="number"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:background="@drawable/shape_border1" >
+                </EditText>
+            </LinearLayout>
+            <!--    Lattitude-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:text="Lattitude"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_lattitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Lattitude"
+                android:enabled="false"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+            <!--    longitude-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Longitude"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:enabled="false"
+                android:layout_marginRight="15dp"
+                android:hint="Longitude"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_border1"
+                android:textSize="20dp" >
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        android:text="Save"
+        android:background="@drawable/selected_shape_border"
+        android:textSize="20dp" />
+</LinearLayout>
